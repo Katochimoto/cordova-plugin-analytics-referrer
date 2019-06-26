@@ -11,6 +11,8 @@ import android.preference.PreferenceManager;
 
 import android.util.Log;
 
+// import com.google.analytics.tracking.android.CampaignTrackingReceiver;
+
 public class Receiver extends BroadcastReceiver {
 
 @Override
@@ -27,6 +29,8 @@ public void onReceive(Context context, Intent intent) {
     	    edit.commit();
         }
     }
+
+    // new CampaignTrackingReceiver().onReceive(context, intent);
 }
- 
+
 } // end of class
